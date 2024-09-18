@@ -23,6 +23,9 @@ todoList = [
 function deleteTodo(index) {
     console.log("Before: " + todoList)
     // YOUR CODE HERE
+    if (index >= 0  && index < todoListAnswer.length ) {
+        todoListAnswer.splice(index, 1);
+    }
     todoList.splice(index, 1);
     console.log("After: " + todoList)
 }
