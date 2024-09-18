@@ -1,5 +1,5 @@
-// How do I run this? 
-// node Task2.ts    
+// How do I run this script? 
+// node Task2.js    
 
 todoList = [
     "Apply to y/cs!",
@@ -23,7 +23,8 @@ todoList = [
 function deleteTodo(index) {
     console.log("Before: " + todoList)
     // YOUR CODE HERE
-    console.log("After:" + todoList)
+    todoList.splice(index, 1);
+    console.log("After: " + todoList)
 }
 
 /**

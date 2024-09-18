@@ -54,6 +54,9 @@
             // COMPLETE:
             // What should happen when the Add Todo button is clicked? 
             // YOUR CODE HERE 
+            if (createdTodo){
+                addTodo(createdTodo)
+            }
 
             // reset the input value after add todo is clicked.
             todoInput.value = '';
@@ -80,12 +83,16 @@
         }
 
         function deleteTodo(index) {
-            // YOUR CODE HERE 
+            // YOUR CODE HERE (recycle your work from former tasks)
+            // console.log("Before: " + todoList)
+            todoList.splice(index, 1);
+            // console.log("After: " + todoList)
             refreshTodoList()
         }
 
         function addTodo(todo) {
-            // YOUR CODE HERE
+            // YOUR CODE HERE (recycle your work from former tasks)
+            todoList.push(todo);
             refreshTodoList()
         }
     </script>
